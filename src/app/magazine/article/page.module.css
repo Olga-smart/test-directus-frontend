@@ -1,0 +1,117 @@
+.heading {
+  font-family: var(--font-montserrat);
+  margin-block: 96px;
+  text-align: center;
+  font-size: 70px;
+}
+
+.articleCard {
+  margin-bottom: 96px;
+  
+  @media (min-width: 991px) {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    grid-template-rows: repeat(3, -webkit-min-content) 1fr;
+    grid-template-rows: repeat(3, min-content) 1fr;
+    -moz-column-gap: 40px; 
+         column-gap: 40px;
+    row-gap: 32px;
+    align-content: start;
+  }
+}
+
+.articleImage {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+
+  @media (min-width: 991px) {
+    grid-row: 1/-1;
+  }
+}
+
+.articleMeta {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 8px;
+}
+
+.articleType {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+  transition: color 0.1s;
+}
+
+.articleTag {
+  color: var(--violet);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.articleTag:hover {
+  color: var(--magazine-blue);
+}
+
+.articleDate {
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+}
+
+.articleTitle {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 42px;
+  transition: color 0.1s;
+
+  &:hover {
+    color: var(--magazine-blue);
+  }
+}
+
+.articleDescription {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.articleAuthor {
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--violet);
+  color: var(--gray);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  transition-duration: 0.2s;
+  transition-property: color, backgroundColor, borderColor;
+}
+
+.page:hover,
+.currentPage {
+  color: #fff;
+  background-color: var(--meta-blue);
+  border-color: var(--meta-blue);
+}

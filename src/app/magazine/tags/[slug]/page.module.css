@@ -1,0 +1,139 @@
+.pageTitle {
+  font-family: var(--font-montserrat);
+  font-size: 70px;
+  font-weight: 700;
+  margin-top: 96px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.tags {
+  margin-bottom: 96px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-inline: auto;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  row-gap: 10px;
+
+}
+
+.tag {
+  color: var(--violet);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 600;
+  transition: color 0.1s;
+}
+
+.tag:hover {
+  color: var(--magazine-blue);
+}
+
+.currentTag {
+  color: var(--meta-black);
+}
+
+.articles {
+  display: grid;
+  row-gap: 96px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  margin-bottom: 120px;
+
+  @media (min-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 991px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.articleCard {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.articleImage {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+
+.articleTitle {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  transition: color 0.1s;
+
+  &:hover {
+    color: var(--magazine-blue);
+  }
+}
+
+.articleAuthor {
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.articleMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.articleType {
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  transition: color 0.1s;
+}
+
+.articleTag {
+  color: var(--violet);
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+
+  &:hover {
+    color: var(--magazine-blue);
+  }
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--violet);
+  color: var(--gray);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  transition-duration: 0.2s;
+  transition-property: color, backgroundColor, borderColor;
+}
+
+.page:hover,
+.currentPage {
+  color: #fff;
+  background-color: var(--meta-blue);
+  border-color: var(--meta-blue);
+}

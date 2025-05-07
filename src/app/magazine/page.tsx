@@ -4,8 +4,8 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Link href="/magazine" className={styles.link}>
-        Magazine
+      <Link href="/magazine/article" className={styles.link}>
+        All materials
       </Link>
     </div>
   );

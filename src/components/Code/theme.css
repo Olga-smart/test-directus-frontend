@@ -1,0 +1,31 @@
+.hljs-keyword {
+  color: #FFA300;
+}
+
+.hljs {
+  color: #FFF;
+}
+
+.hljs-name {
+  color: #FFA300;
+}
+
+.hljs-attr {
+  color: #E753FF;
+}
+
+.hljs-title {
+  color: #4E7FFF;
+}
+
+.hljs-params {
+  color: #FFF;
+}
+
+.hljs-string {
+  color: #E753FF;
+}
+
+.hljs-tag {
+  color: #FFA300;
+}

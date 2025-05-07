@@ -1,0 +1,48 @@
+.heading {
+  font-family: var(--font-montserrat);
+  margin-block: 96px;
+  text-align: center;
+  font-size: 70px;
+}
+
+.tag {
+  color: var(--violet);
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 20px;
+  transition: color 0.1s;
+}
+
+.tag:hover {
+  color: var(--magazine-blue);
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--violet);
+  color: var(--gray);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  transition-duration: 0.2s;
+  transition-property: color, backgroundColor, borderColor;
+}
+
+.page:hover,
+.currentPage {
+  color: #fff;
+  background-color: var(--meta-blue);
+  border-color: var(--meta-blue);
+}

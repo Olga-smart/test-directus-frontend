@@ -1,0 +1,10 @@
+.block {
+  margin-bottom: 96px;
+  font-family: var(--font-montserrat);
+  font-size: 28px;
+  line-height: 1.5;
+
+  & a {
+    font-weight: inherit !important;
+  }
+}

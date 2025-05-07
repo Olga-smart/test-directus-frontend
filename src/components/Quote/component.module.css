@@ -1,0 +1,106 @@
+.block {
+  margin-block: 56px;
+  container-type: inline-size;
+}
+
+.container {
+  display: flex;
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.photoWrapper {
+  margin-right: 40px;
+  flex-shrink: 0;
+  align-self: flex-start;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.photo {
+  width: 250px;
+  height: auto;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-family: var(--font-montserrat);
+  font-size: 28px;
+  line-height: 150%;
+  font-weight: 600;
+  position: relative;
+  padding-top: 56px;
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-image: url('./quote.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.block_type_big .text {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.block_type_medium .text,
+.block_type_withPhoto .text {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.block_type_small .text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.block_type_big .text,
+.block_type_withPhoto .text {
+  padding-top: 112px;
+}
+
+.block_type_big .text::before,
+.block_type_withPhoto .text::before {
+  width: 72px;
+  height: 72px;
+}
+
+.author {
+  margin-bottom: 4px;
+  font-family: var(--font-montserrat);
+  font-size: 20px;
+  line-height: 150%;
+  font-weight: 500;
+}
+
+.duty {
+  color: var(--gray);
+  font-size: 13px;
+  line-height: normal;
+  font-weight: 600;
+}
+
+.block a {
+  text-decoration: none;
+  box-shadow: inset 0 -2px var(--meta-yellow);
+  transition-property: box-shadow, color;
+  transition-duration: 0.2s;
+  font-weight: inherit !important;
+
+  &:hover {
+    color: var(--magazine-blue);
+    box-shadow: inset 0 -12px rgba(0, 41, 255, 0.3);
+  }
+}

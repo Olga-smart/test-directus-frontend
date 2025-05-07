@@ -1,0 +1,39 @@
+.advertisementPanel {
+  margin-top: 40px;
+  font-family: var(--font-montserrat);
+  transition: opacity 0.2s;
+  pointer-events: auto;
+}
+
+.advertisementTitle {
+  font-size: 26px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.advertisementText {
+  font-size: 24px;
+  line-height: 1.3;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.advertisementLink {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #141414;
+  box-shadow: inset 0 -2px var(--meta-yellow);
+  transition: box-shadow .14s linear, color .14s linear;
+
+  &:hover {
+    color: var(--magazine-blue);
+    box-shadow: inset 0 -12px rgba(0, 41, 255, 0.3);
+  }
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
