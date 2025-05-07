@@ -12,7 +12,6 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "directus-s35r.onrender.com",
-        port: "1000",
         pathname: "/assets/**",
       },
     ],
